@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economia Brasileira | Notícias em Foco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Notícias em Foco</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Política</a></li>
+                    <li><a href="#">Economia</a></li>
+                    <li><a href="#">Tecnologia</a></li>
+                    <li><a href="#">Esportes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <main class="full-article">
+                <article>
+                    <h1>Desafios da Juventude</h1>
+                    <div class="article-meta">Publicado em 14/06/2025 por Ana Oliveira</div>
+                    
+                    <p>Uma pesquisa recente da Universidade Federal revelou que 72% dos jovens entre 18 e 25 anos estão preocupados com o futuro profissional.</p>
+                    
+                    <p> A principal inquietação desses jovens está relacionada à estabilidade financeira e às dificuldades de inserção no mercado de trabalho, que tem se tornado cada vez mais competitivo.</p>
+                    
+                    <div class="ad-in-article">
+                        <p>Publicidade</p>
+                        <img src="c:\Users\labosasco\Downloads\3168103383240669270.png" alt="Publicidade" class="ad-image">
+                    </div>
+                    
+                    <h3>O Impacto da Tecnologia e a Concorrência por Vagas</h3>
+                    <p>O estudo destaca que a rápida evolução tecnológica é um dos grandes desafios enfrentados pela juventude, exigindo constante atualização e adaptação às novas demandas.</p>
+                    
+                    <p>. A competição por vagas tem aumentado, gerando um cenário de incertezas e ansiedade entre os jovens que estão entrando no mercado.</p>
+                    
+                    <a href="index.html" class="back-button">Voltar para Notícias</a>
+                </article>
+                
+                <section class="comments">
+                    <h2>Comentários</h2>
+                    
+                    <div class="comment-form">
+                        <h3>Deixe seu comentário</h3>
+                        <input type="text" id="comment-author" placeholder="Seu nome" required>
+                        <textarea id="comment-text" placeholder="Escreva seu comentário aqui..." required></textarea>
+                        <button onclick="addComment('noticia2')">Enviar Comentário</button>
+                    </div>
+                    
+                    <div id="comments-container">
+                        <!-- Comentários carregados pelo JavaScript -->
+                    </div>
+                </section>
+            </main>
+            
+            <aside class="sidebar">
+                <div class="ad-space">
+                    <p>Publicidade</p>
+                    <img src="c:\Users\labosasco\Downloads\jonbet-logo.jpeg" alt="Publicidade" class="ad-image">
+                </div>
+                
+                <div>
+                    <h3>Notícias Relacionadas</h3>
+                    <ul>
+                        <li><a href="noticia1.html">Botafogo Derruba PSG em Vitória Histórica e Surpreende o Mundo no Mundial de Clubes</a></li>
+                        <li><a href="noticia3.html">Estreito de Ormuz: a ameaça do Irã que pode custar caro.</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Notícias em Foco - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+            loadComments('noticia2');
+        };
+    </script>
+</body>
+</html>

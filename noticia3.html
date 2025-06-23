@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção Brasileira | Notícias em Foco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Notícias em Foco</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Política</a></li>
+                    <li><a href="#">Economia</a></li>
+                    <li><a href="#">Tecnologia</a></li>
+                    <li><a href="#">Esportes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <main class="full-article">
+                <article>
+                    <h1>Estreito de Ormuz: a ameaça do Irã que pode custar caro.</h1>
+                    <div class="article-meta">Publicado em 13/06/2023 por Roberto Santos</div>
+                    
+                    <p>A ameaça por parte do Irã de interditar o Estreito de Ormuz, importante corredor marítimo responsável pelo transporte de aproximadamente um quinto do petróleo consumido mundialmente, voltou a gerar apreensão entre os líderes globais.</p>
+                    
+                    <p>Mas, em termos práticos, quais seriam as implicações do fechamento do Estreito de Ormuz? De que maneira um único país poderia tentar interromper, em águas internacionais, uma das rotas comerciais mais essenciais para a economia global?</p>
+                    
+                    <div class="ad-in-article">
+                        <p>Publicidade</p>
+                        <img src="c:\Users\labosasco\Downloads\3168103383240669270.png" alt="Publicidade" class="ad-image">
+                    </div>
+                    
+                    <h3>Caminhos para Superar os Desafios</h3>
+                    <p>Embora parte do estreito esteja sob a soberania do Irã e de Omã, a faixa marítima utilizada pelo tráfego comercial é reconhecida como águas internacionais, conforme o direito marítimo estabelecido pelas Nações Unidas. Sob essa perspectiva legal, o bloqueio imposto pelo Irã não seria autorizado. Contudo, na prática, a configuração geográfica da região e o poderio militar iraniano revelam outra realidade. A utilização de minas subaquáticas, mísseis, embarcações rápidas e drones suicidas compõem o aparato ofensivo que o Irã mantém para controlar a passagem.</p>
+                    
+                    <a href="index.html" class="back-button">Voltar para Notícias</a>
+                </article>
+                
+                <section class="comments">
+                    <h2>Comentários</h2>
+                    
+                    <div class="comment-form">
+                        <h3>Deixe seu comentário</h3>
+                        <input type="text" id="comment-author" placeholder="Seu nome" required>
+                        <textarea id="comment-text" placeholder="Escreva seu comentário aqui..." required></textarea>
+                        <button onclick="addComment('noticia3')">Enviar Comentário</button>
+                    </div>
+                    
+                    <div id="comments-container">
+                        <!-- Comentários carregados pelo JavaScript -->
+                    </div>
+                </section>
+            </main>
+            
+            <aside class="sidebar">
+                <div class="ad-space">
+                    <p>Publicidade</p>
+                    <img src="c:\Users\labosasco\Downloads\jonbet-logo.jpeg" alt="Publicidade" class="ad-image">
+                </div>
+                
+                <div>
+                    <h3>Notícias Relacionadas</h3>
+                    <ul>
+                        <li><a href="noticia1.html">Botafogo Derruba PSG em Vitória Histórica e Surpreende o Mundo no Mundial de Clubes</a></li>
+                        <li><a href="noticia2.html">Desafios da Juventude</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Notícias em Foco - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+            loadComments('noticia3');
+        };
+    </script>
+</body>
+</html>

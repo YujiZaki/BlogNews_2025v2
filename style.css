@@ -1,0 +1,234 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin-right: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Conteúdo principal */
+.main-content {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.articles {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+/* Artigos */
+article {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    padding-bottom: 3.5rem;
+}
+
+.full-article article {
+    padding-bottom: 1.5rem;
+}
+
+article h1, article h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.article-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background-color: #2c3e50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #1a252f;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #1a252f;
+}
+
+/* Publicidade */
+.ad-space {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ad-in-article {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ad-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Comentários */
+.comments {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.comments h2, .comments h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.comment-form {
+    margin-bottom: 2rem;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.comment-form button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #1a252f;
+}
+
+.comment {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.comment-date {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.comment-text {
+    margin-top: 0.5rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
